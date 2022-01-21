@@ -1,14 +1,23 @@
 $colorLetra: rgb(255, 255, 255);
 $colorPrincipal: rgb(220, 53, 69);
+$colorSecundario: rgb(27, 27, 27);
 * {
   padding: 0;
   margin: 0px;
 }
 body {
   color: $colorLetra;
-  background-color: rgb(27, 27, 27);
+  background-color: $colorSecundario;
   font-size: 20px;
   font-family: "Inter", sans-serif;
+}
+button {
+  padding: 20px;
+  color: white;
+  background-color: $colorSecundario;
+  border-radius: 6px;
+  border: solid 2px white;
+  margin-top: 20px;
 }
 
 .encabezado {
