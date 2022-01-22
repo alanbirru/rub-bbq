@@ -1,10 +1,10 @@
 $colorLetra: rgb(255, 255, 255);
 $colorPrincipal: rgb(165, 6, 0);
 $colorSecundario: rgb(27, 27, 27);
+$widthCelular: 80%;
 * {
   padding: 0;
   margin: 0px;
-
   box-sizing: border-box;
 }
 // NAV
@@ -13,6 +13,7 @@ $colorSecundario: rgb(27, 27, 27);
   width: 100%;
   background-color: $colorSecundario;
   position: fixed;
+  border-bottom: 2px solid white;
 }
 
 .nav > .nav-header {
@@ -78,10 +79,11 @@ $colorSecundario: rgb(27, 27, 27);
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: rgb(65, 65, 65);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
+    text-align: center;
     top: 50px;
     left: 0px;
   }
@@ -93,7 +95,7 @@ $colorSecundario: rgb(27, 27, 27);
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 40px);
     overflow-y: auto;
   }
 }
@@ -104,7 +106,7 @@ body {
   font-size: 20px;
   font-family: "Inter", sans-serif;
 }
-button {
+.encabezado button {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   color: white;
@@ -112,6 +114,12 @@ button {
   border-radius: 6px;
   border: solid 2px white;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  transition: 0.2s ease-in-out;
 }
 
 .encabezado {
@@ -123,7 +131,6 @@ button {
   background-color: $colorPrincipal;
   padding-bottom: 100px;
   padding-top: 100px;
-  border-bottom: 3px solid $colorLetra;
 }
 
 .encabezado {
@@ -145,15 +152,24 @@ img {
   padding: 50px;
 }
 
+.encabezado button:hover {
+  background-color: $colorLetra;
+  color: black;
+  border: solid 2px rgb(0, 0, 0);
+}
+
 @media (max-width: 600px) {
   .encabezado {
     width: 100%;
   }
   .encabezado p {
-    width: 80%;
+    width: $widthCelular;
     text-align: center;
   }
   img {
-    width: 70%;
+    width: $widthCelular;
+  }
+  .encabezado button {
+    width: $widthCelular;
   }
 }
