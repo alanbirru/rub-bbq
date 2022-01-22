@@ -5,6 +5,7 @@ $widthCelular: 80%;
 * {
   padding: 0;
   margin: 0px;
+
   box-sizing: border-box;
 }
 // NAV
@@ -121,6 +122,12 @@ body {
   width: 400px;
   transition: 0.2s ease-in-out;
 }
+.encabezado a {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .encabezado {
   display: flex;
@@ -170,6 +177,9 @@ img {
     width: $widthCelular;
   }
   .encabezado button {
+    width: $widthCelular;
+  }
+  .encabezado a {
     width: $widthCelular;
   }
 }

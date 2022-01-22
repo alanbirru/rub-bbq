@@ -129,6 +129,19 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+.encabezado a {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .encabezado {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +199,9 @@ img {
     width: 80%;
   }
   .encabezado button {
+    width: 80%;
+  }
+  .encabezado a {
     width: 80%;
   }
 }
