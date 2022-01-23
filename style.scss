@@ -8,6 +8,10 @@ $widthCelular: 80%;
 
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 // NAV
 .nav {
   height: 50px;
@@ -96,7 +100,7 @@ $widthCelular: 80%;
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 40px);
+    height: calc(33vh - 40px);
     overflow-y: auto;
   }
 }
@@ -107,7 +111,7 @@ body {
   font-size: 20px;
   font-family: "Inter", sans-serif;
 }
-.encabezado button {
+#encabezado button {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   color: white;
@@ -122,7 +126,7 @@ body {
   width: 400px;
   transition: 0.2s ease-in-out;
 }
-.encabezado a {
+#encabezado a {
   width: 400px;
   display: flex;
   justify-content: center;
@@ -130,7 +134,7 @@ body {
   text-decoration: none;
 }
 
-.encabezado {
+#encabezado {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,7 +145,7 @@ body {
   padding-top: 100px;
 }
 
-.encabezado {
+#encabezado {
   h1 {
     margin-top: 30px;
     text-align: center;
@@ -160,27 +164,27 @@ img {
   padding: 50px;
 }
 
-.encabezado button:hover {
+#encabezado button:hover {
   background-color: $colorLetra;
   color: black;
   border: solid 2px rgb(0, 0, 0);
 }
 
 @media (max-width: 600px) {
-  .encabezado {
+  #encabezado {
     width: 100%;
   }
-  .encabezado p {
+  #encabezado p {
     width: $widthCelular;
     text-align: center;
   }
   img {
     width: $widthCelular;
   }
-  .encabezado button {
+  #encabezado button {
     width: $widthCelular;
   }
-  .encabezado a {
+  #encabezado a {
     width: $widthCelular;
   }
 }

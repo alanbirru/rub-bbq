@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav {
   height: 50px;
   width: 100%;
@@ -93,7 +97,7 @@
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 40px);
+    height: calc(33vh - 40px);
     overflow-y: auto;
   }
 }
@@ -105,7 +109,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.encabezado button {
+#encabezado button {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
@@ -129,7 +133,7 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.encabezado a {
+#encabezado a {
   width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,7 +147,7 @@ body {
   text-decoration: none;
 }
 
-.encabezado {
+#encabezado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,12 +167,12 @@ body {
   padding-top: 100px;
 }
 
-.encabezado h1 {
+#encabezado h1 {
   margin-top: 30px;
   text-align: center;
 }
 
-.encabezado p {
+#encabezado p {
   width: 50%;
   text-align: center;
 }
@@ -182,27 +186,27 @@ img {
   padding: 50px;
 }
 
-.encabezado button:hover {
+#encabezado button:hover {
   background-color: white;
   color: black;
   border: solid 2px black;
 }
 
 @media (max-width: 600px) {
-  .encabezado {
+  #encabezado {
     width: 100%;
   }
-  .encabezado p {
+  #encabezado p {
     width: 80%;
     text-align: center;
   }
   img {
     width: 80%;
   }
-  .encabezado button {
+  #encabezado button {
     width: 80%;
   }
-  .encabezado a {
+  #encabezado a {
     width: 80%;
   }
 }
