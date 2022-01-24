@@ -253,7 +253,7 @@ img {
   transition: 0.3s;
 }
 
-a:hover {
+.telefonos a:hover {
   color: #43dc5f;
   background-color: white;
 }
