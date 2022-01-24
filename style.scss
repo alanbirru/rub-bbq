@@ -100,7 +100,7 @@ html {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(33vh - 40px);
+    height: calc(35vh - 40px);
     overflow-y: auto;
   }
 }
@@ -164,6 +164,42 @@ img {
   padding: 50px;
 }
 
+#haz_tu_pedido {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#haz_tu_pedido h1 {
+  margin-bottom: 15px;
+}
+
+.telefonos {
+  text-align: center;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.telefonos a {
+  color: white;
+  text-decoration: none;
+}
+.telefono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.telefono:hover {
+  color: rgb(67, 220, 95);
+}
+
 #encabezado button:hover {
   background-color: $colorLetra;
   color: black;
@@ -187,4 +223,11 @@ img {
   #encabezado a {
     width: $widthCelular;
   }
+  .telefonos {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+iframe {
+  width: 100%;
 }
