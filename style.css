@@ -229,6 +229,11 @@ img {
 .telefonos a {
   color: white;
   text-decoration: none;
+  background-color: #a50600;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .telefono {
@@ -248,6 +253,10 @@ img {
 
 .telefono:hover {
   color: #43dc5f;
+}
+
+.telefonos a:hover {
+  background-color: white;
 }
 
 #encabezado button:hover {
@@ -279,6 +288,9 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
+  }
+  .telefonos a {
+    width: 100%;
   }
 }
 

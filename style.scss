@@ -187,6 +187,10 @@ img {
 .telefonos a {
   color: white;
   text-decoration: none;
+  background-color: $colorPrincipal;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 .telefono {
   display: flex;
@@ -198,6 +202,9 @@ img {
 
 .telefono:hover {
   color: rgb(67, 220, 95);
+}
+.telefonos a:hover {
+  background-color: white;
 }
 
 #encabezado button:hover {
@@ -226,6 +233,9 @@ img {
   .telefonos {
     flex-direction: column;
     gap: 20px;
+  }
+  .telefonos a {
+    width: 100%;
   }
 }
 iframe {
