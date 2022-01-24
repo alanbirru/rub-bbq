@@ -177,7 +177,7 @@ body {
   text-align: center;
 }
 
-img {
+#encabezado img {
   width: 30%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -187,7 +187,7 @@ img {
 }
 
 #haz_tu_pedido {
-  margin-top: 80px;
+  margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,10 +203,11 @@ img {
           align-items: center;
   gap: 10px;
   text-align: center;
+  margin-bottom: 150px;
 }
 
 #haz_tu_pedido h1 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .telefonos {
@@ -214,7 +215,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 70px;
+  gap: 65px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -258,13 +259,58 @@ img {
   background-color: white;
 }
 
+#lo_mas_pedido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#lo_mas_pedido h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.comida {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comida img {
+  width: 300px;
+  border-radius: 50px;
+}
+
+#lo_mas_pedido h1 {
+  margin-bottom: 30px;
+}
+
 #encabezado button:hover {
   background-color: white;
   color: black;
   border: solid 2px black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 745px) {
   #encabezado {
     width: 100%;
   }
@@ -272,8 +318,8 @@ img {
     width: 80%;
     text-align: center;
   }
-  img {
-    width: 80%;
+  #encabezado img {
+    width: 60%;
   }
   #encabezado button {
     width: 80%;
@@ -290,6 +336,9 @@ img {
   }
   .telefonos a {
     width: 200px;
+  }
+  .comida img {
+    width: 260px;
   }
 }
 

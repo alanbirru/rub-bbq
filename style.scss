@@ -155,7 +155,7 @@ body {
     text-align: center;
   }
 }
-img {
+#encabezado img {
   width: 30%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -165,22 +165,23 @@ img {
 }
 
 #haz_tu_pedido {
-  margin-top: 80px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   text-align: center;
+  margin-bottom: 150px;
 }
 #haz_tu_pedido h1 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .telefonos {
   text-align: center;
   display: flex;
-  gap: 70px;
+  gap: 65px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -205,13 +206,37 @@ img {
   color: rgb(67, 220, 95);
   background-color: white;
 }
+#lo_mas_pedido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#lo_mas_pedido h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.comida {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.comida img {
+  width: 300px;
+  border-radius: 50px;
+}
+#lo_mas_pedido h1 {
+  margin-bottom: 30px;
+}
 #encabezado button:hover {
   background-color: $colorLetra;
   color: black;
   border: solid 2px rgb(0, 0, 0);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 745px) {
   #encabezado {
     width: 100%;
   }
@@ -219,8 +244,8 @@ img {
     width: $widthCelular;
     text-align: center;
   }
-  img {
-    width: $widthCelular;
+  #encabezado img {
+    width: 60%;
   }
   #encabezado button {
     width: $widthCelular;
@@ -235,6 +260,9 @@ img {
   }
   .telefonos a {
     width: 200px;
+  }
+  .comida img {
+    width: 260px;
   }
 }
 iframe {
