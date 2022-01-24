@@ -304,6 +304,20 @@ body {
   margin-bottom: 30px;
 }
 
+#lo_mas_pedido a {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.google_maps {
+  margin-top: 150px;
+}
+
+.google_maps h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 #encabezado button:hover {
   background-color: white;
   color: black;
