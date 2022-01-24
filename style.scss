@@ -171,6 +171,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  text-align: center;
 }
 #haz_tu_pedido h1 {
   margin-bottom: 15px;
@@ -179,7 +180,7 @@ img {
 .telefonos {
   text-align: center;
   display: flex;
-  gap: 80px;
+  gap: 70px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -191,6 +192,7 @@ img {
   padding: 15px;
   border-radius: 10px;
   transition: 0.3s;
+  width: 200px;
 }
 .telefono {
   display: flex;
@@ -199,14 +201,10 @@ img {
   justify-content: center;
   transition: 0.3s;
 }
-
-.telefono:hover {
+a:hover {
   color: rgb(67, 220, 95);
-}
-.telefonos a:hover {
   background-color: white;
 }
-
 #encabezado button:hover {
   background-color: $colorLetra;
   color: black;
@@ -230,12 +228,13 @@ img {
   #encabezado a {
     width: $widthCelular;
   }
+
   .telefonos {
     flex-direction: column;
     gap: 20px;
   }
   .telefonos a {
-    width: 100%;
+    width: 200px;
   }
 }
 iframe {
