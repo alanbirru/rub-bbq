@@ -15,6 +15,7 @@ html {
   background-color: #1b1b1b;
   position: fixed;
   border-bottom: 2px solid white;
+  z-index: 2;
 }
 
 .nav > .nav-header {
@@ -320,6 +321,8 @@ body {
 .comida img {
   width: 300px;
   border-radius: 50px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 #lo_mas_pedido h1 {
@@ -329,6 +332,7 @@ body {
 #lo_mas_pedido a {
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
+  overflow: hidden;
 }
 
 #google_maps {
@@ -344,6 +348,11 @@ body {
   background-color: white;
   color: black;
   border: solid 2px black;
+}
+
+.comida img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 745px) {
@@ -375,6 +384,10 @@ body {
   }
   .comida img {
     width: 260px;
+  }
+  .comida img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
