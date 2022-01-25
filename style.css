@@ -16,6 +16,8 @@ html {
   position: fixed;
   border-bottom: 2px solid white;
   z-index: 2;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
 }
 
 .nav > .nav-header {
